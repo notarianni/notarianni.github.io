@@ -1,10 +1,7 @@
 -module(index).
 
 data(_) ->
-    #{ msg              => "Hello World!",
-       from_eterm       => {eterm,    "hello.config"},
-       from_json        => {json,     "hello.json"},
-       from_markdown    => {markdown, "hello.md"}
+    #{ mvp_bash    => {markdown, "articles/mvp_bash.md"}
      }.
 
 site(_) ->

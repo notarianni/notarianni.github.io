@@ -2,25 +2,44 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Your page title here :)</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <title>Bernard Notarianni</title>
+  <meta name="description" content="informatique erlang agile extreme programming xp continuous delivery lean startup startup">
+  <meta name="author" content="Bernard Notarianni">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <script src="js/run_prettify.js"></script>
+  <script src="js/lang-erlang.js"></script>
+  <link href="http://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/github-prettify-theme.css">
+  <link rel="stylesheet" href="css/custom.css">
   <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 <body>
 
   <div class="container">
-    <div class="row">
-      <div class="one-half column">
-        <h4>Basic Page</h4>
-        <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
-      </div>
-    </div>
+    <h1>Le blog de Bernard Notarianni</h1>
+    <p>
+      Mes reflexions sur la création logicielle, sur l'usage des
+      ordinateurs, sur ce que nous en faisons et peut être ce que nous
+      pourrions en faire. Je m'intéresse entre autres à l'eXtreme Programming,
+      <a href="http://www.erlang.org/">Erlang</a> et <a href="http://racket-lang.org/">Lisp</a>.
+    </p>
+    <hr/>
+
+    {{mvp_bash|markdown_to_html }}
+
   </div>
 
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-3255880-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
 </body>
 </html>
