@@ -5,40 +5,38 @@ date: '2017-11-18'
 
 [Adminission Post Bac](https://www.admission-postbac.fr/) (APB) est
 l'application officielle du Ministère de l'Education Nationale permettant aux
-lycéen d'obtenir l'inscription dans une école ou université post-
+lycéens d'obtenir l'inscription dans une école ou université post-
 bac.
 
 L'objectif de ce kata est de concevoir et implémenter _votre_ version de cette
 application. Vous êtes libre de choisir votre algorithme et vos contraintes.
-Vous pouvez vous inspirer de l'application existante, ou pas.
+Vous pouvez vous inspirer de l'application existante si vous le souhaitez,
+ou bien inventer votre propre approche.
 
 ## Description du problème
 
 Constuisez un programme qui permette de déterminer les affectations d'une liste
-de d'étudiants par rapport à une liste de formations disponibles.
+d'étudiants selon une liste de formations disponibles.
 
 Le programme doit accepter en entrée:
 
 - La liste des étudiants
 - La liste des formations
 
-Chaque étudiant et chaque formation doit etre identifiée par un nom unique.
-Vous pouvez ajouter autant d'information que nécessaire aux étudiants et
-formations afin d'alimenter votre algorithme.
+Chaque étudiant et chaque formation doit être identifiée par un nom unique.
+Aafin d'alimenter votre algorithme, vous pouvez ajouter autant d'information
+que nécessaire aussi bien aux étudiants qu'aux formations .
 
-Le programme fournira en résultat une liste des affectations avec deux
-colonnes:
-
-- le nom de l'étudiant
-- la formation qui lui est affectée
+Le programme fournira en résultat une liste indiquant pour chaque étudiant la
+formation qui lui a été affectée.
 
 ## Exemple
 
 A titre d'exemple, nous vous proposons cette solution très simple. 
 
-- Il n'y a aucun critère de sélection pour l'entrée dans les formations
-- Nous distibuons les étudiants les uns après les autres sur la liste des formations disponibles
-- Le nombre de places par formations n'est pas limité
+- Il n'y a aucun critère de sélection pour l'entrée dans les formations;
+- Nous distibuons les étudiants les uns après les autres sur la liste des formations disponibles;
+- Le nombre de places par formations n'est pas limité.
 
 
 {{< highlight haskell  >}}

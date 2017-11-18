@@ -38,17 +38,18 @@
 
 <p><a href="https://www.admission-postbac.fr/">Adminission Post Bac</a> (APB) est
 l&rsquo;application officielle du Ministère de l&rsquo;Education Nationale permettant aux
-lycéen d&rsquo;obtenir l&rsquo;inscription dans une école ou université post-
+lycéens d&rsquo;obtenir l&rsquo;inscription dans une école ou université post-
 bac.</p>
 
 <p>L&rsquo;objectif de ce kata est de concevoir et implémenter <em>votre</em> version de cette
 application. Vous êtes libre de choisir votre algorithme et vos contraintes.
-Vous pouvez vous inspirer de l&rsquo;application existante, ou pas.</p>
+Vous pouvez vous inspirer de l&rsquo;application existante si vous le souhaitez,
+ou bien inventer votre propre approche.</p>
 
 <h2 id="description-du-problème">Description du problème</h2>
 
 <p>Constuisez un programme qui permette de déterminer les affectations d&rsquo;une liste
-de d&rsquo;étudiants par rapport à une liste de formations disponibles.</p>
+d&rsquo;étudiants selon une liste de formations disponibles.</p>
 
 <p>Le programme doit accepter en entrée:</p>
 
@@ -57,26 +58,21 @@ de d&rsquo;étudiants par rapport à une liste de formations disponibles.</p>
 <li>La liste des formations</li>
 </ul>
 
-<p>Chaque étudiant et chaque formation doit etre identifiée par un nom unique.
-Vous pouvez ajouter autant d&rsquo;information que nécessaire aux étudiants et
-formations afin d&rsquo;alimenter votre algorithme.</p>
+<p>Chaque étudiant et chaque formation doit être identifiée par un nom unique.
+Aafin d&rsquo;alimenter votre algorithme, vous pouvez ajouter autant d&rsquo;information
+que nécessaire aussi bien aux étudiants qu&rsquo;aux formations .</p>
 
-<p>Le programme fournira en résultat une liste des affectations avec deux
-colonnes:</p>
-
-<ul>
-<li>le nom de l&rsquo;étudiant</li>
-<li>la formation qui lui est affectée</li>
-</ul>
+<p>Le programme fournira en résultat une liste indiquant pour chaque étudiant la
+formation qui lui a été affectée.</p>
 
 <h2 id="exemple">Exemple</h2>
 
 <p>A titre d&rsquo;exemple, nous vous proposons cette solution très simple.</p>
 
 <ul>
-<li>Il n&rsquo;y a aucun critère de sélection pour l&rsquo;entrée dans les formations</li>
-<li>Nous distibuons les étudiants les uns après les autres sur la liste des formations disponibles</li>
-<li>Le nombre de places par formations n&rsquo;est pas limité</li>
+<li>Il n&rsquo;y a aucun critère de sélection pour l&rsquo;entrée dans les formations;</li>
+<li>Nous distibuons les étudiants les uns après les autres sur la liste des formations disponibles;</li>
+<li>Le nombre de places par formations n&rsquo;est pas limité.</li>
 </ul>
 
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="color:#66d9ef">import</span> Test.Hspec
