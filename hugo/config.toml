@@ -1,0 +1,24 @@
+baseURL = "http://notarianni.org/"
+languageCode = "fr"
+title = "notarianni.org"
+theme = "hugo-xmin"
+
+[[menu.main]]
+    name = "Articles"
+    url = "/"
+    weight = 1
+[[menu.main]]
+    name = "Bio"
+    url = "/bio/"
+    weight = 2
+[[menu.main]]
+    name = "Catégories"
+    url = "/categories/"
+    weight = 3
+[[menu.main]]
+    name = "Tags"
+    url = "/tags/"
+    weight = 4
+[[menu.main]]
+    name = "RSS"
+    url = "/index.xml"

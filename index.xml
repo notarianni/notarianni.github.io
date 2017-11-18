@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>notarianni.org</title>
+    <link>http://notarianni.org/</link>
+    <description>Recent content on notarianni.org</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <lastBuildDate>Sat, 18 Nov 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://notarianni.org/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Kata APB</title>
+      <link>http://notarianni.org/article/kata-apb/</link>
+      <pubDate>Sat, 18 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://notarianni.org/article/kata-apb/</guid>
+      <description>Adminission Post Bac (APB) est l&amp;rsquo;application officielle du Ministère de l&amp;rsquo;Education Nationale permettant aux lycéen d&amp;rsquo;obtenir l&amp;rsquo;inscription dans une école ou université post- bac.
+L&amp;rsquo;objectif de ce kata est de concevoir et implémenter votre version de cette application. Vous êtes libre de choisir votre algorithme et vos contraintes. Vous pouvez vous inspirer de l&amp;rsquo;application existante, ou pas.
+Description du problème Constuisez un programme qui permette de déterminer les affectations d&amp;rsquo;une liste de d&amp;rsquo;étudiants par rapport à une liste de formations disponibles.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://notarianni.org/bio/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://notarianni.org/bio/</guid>
+      <description>Bernard Notarianni est créateur de logiciels depuis 1993.
+Il a participé à l&amp;rsquo;installation du mouvement agile en France depuis son origine au sein de l&amp;rsquo;association XP-France, devenue ensuite Agile France.
+Il est cofondateur de la Société Coopérative Aleryo.
+Ses centres d&amp;rsquo;intérêts sont l&amp;rsquo;Artisanat Logiciel et la Démocratie.
+Contacts
+Twitter: https://twitter.com/notarianni
+Linkedin: https://www.linkedin.com/in/notarianni/
+GitHub: https://github.com/BernardNotarianni</description>
+    </item>
+    
+  </channel>
+</rss>
