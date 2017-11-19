@@ -121,5 +121,5 @@ main = hspec $ do
 
 {{< / highlight >}}
 
-Vous pouvez également consulter ce [repository git](https://github.com/BernardNotarianni/kata-apb) pour découvrir d'autres exemples de solutions.
-
+Vous trouverez d'autre solutions simples dans ce [repository
+git](https://github.com/BernardNotarianni/kata-apb).
