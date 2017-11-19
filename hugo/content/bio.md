@@ -2,7 +2,7 @@
 
 **Bernard Notarianni** est créateur de logiciels depuis 1993.
 
-Il a participé à l'installation du mouvement agile en France depuis son origine
+Il a participé à l'installation du mouvement agile en France
 au sein de l'association XP-France, devenue ensuite Agile France.
 
 Il est cofondateur de la Société Coopérative Aleryo.

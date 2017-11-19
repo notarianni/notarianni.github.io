@@ -75,55 +75,55 @@ formation qui lui a été affectée.</p>
 <li>Le nombre de places par formations n&rsquo;est pas limité.</li>
 </ul>
 
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="color:#66d9ef">import</span> Test.Hspec
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="color:#000;font-weight:bold">import</span> <span style="color:#555">Test.Hspec</span>
 
-<span style="color:#66d9ef">data</span> <span style="color:#66d9ef">Etudiant</span>  <span style="color:#f92672">=</span> <span style="color:#66d9ef">Etudiant</span>  <span style="color:#66d9ef">String</span> <span style="color:#66d9ef">deriving</span> (<span style="color:#66d9ef">Show</span>, <span style="color:#66d9ef">Eq</span>)
-<span style="color:#66d9ef">data</span> <span style="color:#66d9ef">Formation</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">Formation</span> <span style="color:#66d9ef">String</span> <span style="color:#66d9ef">deriving</span> (<span style="color:#66d9ef">Show</span>, <span style="color:#66d9ef">Eq</span>)
-
-
-<span style="color:#a6e22e">distribue</span> <span style="color:#f92672">::</span> [ <span style="color:#a6e22e">a</span> ] <span style="color:#f92672">-&gt;</span> [ <span style="color:#a6e22e">b</span> ] <span style="color:#f92672">-&gt;</span> [ (<span style="color:#a6e22e">a</span>,<span style="color:#a6e22e">b</span>) ]
-<span style="color:#a6e22e">distribue</span> <span style="color:#a6e22e">a</span> <span style="color:#66d9ef">[]</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">[]</span>
-<span style="color:#a6e22e">distribue</span> <span style="color:#a6e22e">a</span> <span style="color:#a6e22e">b</span> <span style="color:#f92672">=</span>
-  <span style="color:#a6e22e">dist</span> <span style="color:#a6e22e">a</span> <span style="color:#a6e22e">b</span>
-  <span style="color:#66d9ef">where</span>
-    <span style="color:#a6e22e">dist</span> <span style="color:#66d9ef">[]</span> <span style="color:#a6e22e">x</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">[]</span>
-    <span style="color:#a6e22e">dist</span> <span style="color:#a6e22e">x</span> <span style="color:#66d9ef">[]</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">dist</span> <span style="color:#a6e22e">x</span> <span style="color:#a6e22e">b</span>
-    <span style="color:#a6e22e">dist</span> (<span style="color:#a6e22e">xh</span> <span style="color:#66d9ef">:</span> <span style="color:#a6e22e">xt</span> ) ( <span style="color:#a6e22e">yh</span> <span style="color:#66d9ef">:</span> <span style="color:#a6e22e">yt</span> ) <span style="color:#f92672">=</span> (<span style="color:#a6e22e">xh</span>, <span style="color:#a6e22e">yh</span>) <span style="color:#66d9ef">:</span> <span style="color:#a6e22e">dist</span> <span style="color:#a6e22e">xt</span> <span style="color:#a6e22e">yt</span>
+<span style="color:#000;font-weight:bold">data</span> <span style="color:#458;font-weight:bold">Etudiant</span>  <span style="color:#000;font-weight:bold">=</span> <span style="color:#458;font-weight:bold">Etudiant</span>  <span style="color:#458;font-weight:bold">String</span> <span style="color:#000;font-weight:bold">deriving</span> (<span style="color:#458;font-weight:bold">Show</span>, <span style="color:#458;font-weight:bold">Eq</span>)
+<span style="color:#000;font-weight:bold">data</span> <span style="color:#458;font-weight:bold">Formation</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#458;font-weight:bold">Formation</span> <span style="color:#458;font-weight:bold">String</span> <span style="color:#000;font-weight:bold">deriving</span> (<span style="color:#458;font-weight:bold">Show</span>, <span style="color:#458;font-weight:bold">Eq</span>)
 
 
-<span style="color:#a6e22e">apb</span> <span style="color:#f92672">::</span> [ <span style="color:#66d9ef">Etudiant</span> ] <span style="color:#f92672">-&gt;</span> [ <span style="color:#66d9ef">Formation</span> ] <span style="color:#f92672">-&gt;</span> [ (<span style="color:#66d9ef">Etudiant</span>, <span style="color:#66d9ef">Formation</span>) ]
-<span style="color:#a6e22e">apb</span> <span style="color:#a6e22e">etudiants</span> <span style="color:#a6e22e">formations</span> <span style="color:#f92672">=</span>
-  <span style="color:#a6e22e">distribue</span> <span style="color:#a6e22e">etudiants</span> <span style="color:#a6e22e">formations</span>
+<span style="color:#900;font-weight:bold">distribue</span> <span style="color:#000;font-weight:bold">::</span> [ <span style="color:#900;font-weight:bold">a</span> ] <span style="color:#000;font-weight:bold">-&gt;</span> [ <span style="color:#900;font-weight:bold">b</span> ] <span style="color:#000;font-weight:bold">-&gt;</span> [ (<span style="color:#900;font-weight:bold">a</span>,<span style="color:#900;font-weight:bold">b</span>) ]
+<span style="color:#900;font-weight:bold">distribue</span> <span style="color:#900;font-weight:bold">a</span> <span style="color:#458;font-weight:bold">[]</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#458;font-weight:bold">[]</span>
+<span style="color:#900;font-weight:bold">distribue</span> <span style="color:#900;font-weight:bold">a</span> <span style="color:#900;font-weight:bold">b</span> <span style="color:#000;font-weight:bold">=</span>
+  <span style="color:#900;font-weight:bold">dist</span> <span style="color:#900;font-weight:bold">a</span> <span style="color:#900;font-weight:bold">b</span>
+  <span style="color:#000;font-weight:bold">where</span>
+    <span style="color:#900;font-weight:bold">dist</span> <span style="color:#458;font-weight:bold">[]</span> <span style="color:#900;font-weight:bold">x</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#458;font-weight:bold">[]</span>
+    <span style="color:#900;font-weight:bold">dist</span> <span style="color:#900;font-weight:bold">x</span> <span style="color:#458;font-weight:bold">[]</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">dist</span> <span style="color:#900;font-weight:bold">x</span> <span style="color:#900;font-weight:bold">b</span>
+    <span style="color:#900;font-weight:bold">dist</span> (<span style="color:#900;font-weight:bold">xh</span> <span style="color:#458;font-weight:bold">:</span> <span style="color:#900;font-weight:bold">xt</span> ) ( <span style="color:#900;font-weight:bold">yh</span> <span style="color:#458;font-weight:bold">:</span> <span style="color:#900;font-weight:bold">yt</span> ) <span style="color:#000;font-weight:bold">=</span> (<span style="color:#900;font-weight:bold">xh</span>, <span style="color:#900;font-weight:bold">yh</span>) <span style="color:#458;font-weight:bold">:</span> <span style="color:#900;font-weight:bold">dist</span> <span style="color:#900;font-weight:bold">xt</span> <span style="color:#900;font-weight:bold">yt</span>
 
 
-<span style="color:#a6e22e">main</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">hspec</span> <span style="color:#f92672">$</span> <span style="color:#66d9ef">do</span>
-  <span style="color:#a6e22e">describe</span> <span style="color:#e6db74">&#34;apb&#34;</span> <span style="color:#f92672">$</span> <span style="color:#66d9ef">do</span>
+<span style="color:#900;font-weight:bold">apb</span> <span style="color:#000;font-weight:bold">::</span> [ <span style="color:#458;font-weight:bold">Etudiant</span> ] <span style="color:#000;font-weight:bold">-&gt;</span> [ <span style="color:#458;font-weight:bold">Formation</span> ] <span style="color:#000;font-weight:bold">-&gt;</span> [ (<span style="color:#458;font-weight:bold">Etudiant</span>, <span style="color:#458;font-weight:bold">Formation</span>) ]
+<span style="color:#900;font-weight:bold">apb</span> <span style="color:#900;font-weight:bold">etudiants</span> <span style="color:#900;font-weight:bold">formations</span> <span style="color:#000;font-weight:bold">=</span>
+  <span style="color:#900;font-weight:bold">distribue</span> <span style="color:#900;font-weight:bold">etudiants</span> <span style="color:#900;font-weight:bold">formations</span>
 
-    <span style="color:#a6e22e">it</span> <span style="color:#e6db74">&#34;distribue deux listes comme deux jeux de cartes&#34;</span> <span style="color:#f92672">$</span> <span style="color:#66d9ef">do</span>
-      <span style="color:#a6e22e">distribue</span> [<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>] [<span style="color:#ae81ff">3</span>] `<span style="color:#a6e22e">shouldBe</span>` [(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">3</span>), (<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>)]
-      <span style="color:#a6e22e">distribue</span> [<span style="color:#ae81ff">1</span>] [<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>] `<span style="color:#a6e22e">shouldBe</span>` [(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>)]
-      <span style="color:#a6e22e">distribue</span> (<span style="color:#66d9ef">[]</span> <span style="color:#f92672">::</span> [<span style="color:#66d9ef">Int</span>]) [<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>] `<span style="color:#a6e22e">shouldBe</span>` <span style="color:#66d9ef">[]</span>
-      <span style="color:#a6e22e">distribue</span> [<span style="color:#ae81ff">1</span>]  (<span style="color:#66d9ef">[]</span> <span style="color:#f92672">::</span> [<span style="color:#66d9ef">Int</span>])  `<span style="color:#a6e22e">shouldBe</span>` <span style="color:#66d9ef">[]</span>
-      <span style="color:#a6e22e">distribue</span> [<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>] [<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">5</span>,<span style="color:#ae81ff">6</span>] `<span style="color:#a6e22e">shouldBe</span>`
-        [(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">4</span>),
-         (<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">5</span>),
-         (<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">6</span>)]
-      <span style="color:#a6e22e">distribue</span> [<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>] [<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">5</span>] `<span style="color:#a6e22e">shouldBe</span>`
-        [(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">4</span>),
-         (<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">5</span>),
-         (<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">4</span>)]
 
-    <span style="color:#a6e22e">it</span> <span style="color:#e6db74">&#34;reparti les etudiants sur les formations&#34;</span> <span style="color:#f92672">$</span> <span style="color:#66d9ef">do</span>
-      <span style="color:#a6e22e">apb</span> [<span style="color:#a6e22e">e1</span>,<span style="color:#a6e22e">e2</span>,<span style="color:#a6e22e">e3</span>] [<span style="color:#a6e22e">f1</span>, <span style="color:#a6e22e">f2</span>] `<span style="color:#a6e22e">shouldBe</span>`
-        [(<span style="color:#a6e22e">e1</span>,<span style="color:#a6e22e">f1</span>),
-         (<span style="color:#a6e22e">e2</span>,<span style="color:#a6e22e">f2</span>),
-         (<span style="color:#a6e22e">e3</span>,<span style="color:#a6e22e">f1</span>)]
-      <span style="color:#66d9ef">where</span>
-        <span style="color:#a6e22e">e1</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">Etudiant</span> <span style="color:#e6db74">&#34;Jeanne&#34;</span>
-        <span style="color:#a6e22e">e2</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">Etudiant</span> <span style="color:#e6db74">&#34;Mathilde&#34;</span>
-        <span style="color:#a6e22e">e3</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">Etudiant</span> <span style="color:#e6db74">&#34;Sophie&#34;</span>
-        <span style="color:#a6e22e">f1</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">Formation</span> <span style="color:#e6db74">&#34;Informatique&#34;</span>
-        <span style="color:#a6e22e">f2</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">Formation</span> <span style="color:#e6db74">&#34;Histoire&#34;</span></code></pre></div>
+<span style="color:#900;font-weight:bold">main</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">hspec</span> <span style="color:#000;font-weight:bold">$</span> <span style="color:#000;font-weight:bold">do</span>
+  <span style="color:#900;font-weight:bold">describe</span> <span style="color:#d14">&#34;apb&#34;</span> <span style="color:#000;font-weight:bold">$</span> <span style="color:#000;font-weight:bold">do</span>
+
+    <span style="color:#900;font-weight:bold">it</span> <span style="color:#d14">&#34;distribue deux listes comme deux jeux de cartes&#34;</span> <span style="color:#000;font-weight:bold">$</span> <span style="color:#000;font-weight:bold">do</span>
+      <span style="color:#900;font-weight:bold">distribue</span> [<span style="color:#099">1</span>,<span style="color:#099">2</span>] [<span style="color:#099">3</span>] `<span style="color:#900;font-weight:bold">shouldBe</span>` [(<span style="color:#099">1</span>,<span style="color:#099">3</span>), (<span style="color:#099">2</span>,<span style="color:#099">3</span>)]
+      <span style="color:#900;font-weight:bold">distribue</span> [<span style="color:#099">1</span>] [<span style="color:#099">2</span>,<span style="color:#099">3</span>] `<span style="color:#900;font-weight:bold">shouldBe</span>` [(<span style="color:#099">1</span>,<span style="color:#099">2</span>)]
+      <span style="color:#900;font-weight:bold">distribue</span> (<span style="color:#458;font-weight:bold">[]</span> <span style="color:#000;font-weight:bold">::</span> [<span style="color:#458;font-weight:bold">Int</span>]) [<span style="color:#099">2</span>,<span style="color:#099">3</span>] `<span style="color:#900;font-weight:bold">shouldBe</span>` <span style="color:#458;font-weight:bold">[]</span>
+      <span style="color:#900;font-weight:bold">distribue</span> [<span style="color:#099">1</span>]  (<span style="color:#458;font-weight:bold">[]</span> <span style="color:#000;font-weight:bold">::</span> [<span style="color:#458;font-weight:bold">Int</span>])  `<span style="color:#900;font-weight:bold">shouldBe</span>` <span style="color:#458;font-weight:bold">[]</span>
+      <span style="color:#900;font-weight:bold">distribue</span> [<span style="color:#099">1</span>,<span style="color:#099">2</span>,<span style="color:#099">3</span>] [<span style="color:#099">4</span>,<span style="color:#099">5</span>,<span style="color:#099">6</span>] `<span style="color:#900;font-weight:bold">shouldBe</span>`
+        [(<span style="color:#099">1</span>,<span style="color:#099">4</span>),
+         (<span style="color:#099">2</span>,<span style="color:#099">5</span>),
+         (<span style="color:#099">3</span>,<span style="color:#099">6</span>)]
+      <span style="color:#900;font-weight:bold">distribue</span> [<span style="color:#099">1</span>,<span style="color:#099">2</span>,<span style="color:#099">3</span>] [<span style="color:#099">4</span>,<span style="color:#099">5</span>] `<span style="color:#900;font-weight:bold">shouldBe</span>`
+        [(<span style="color:#099">1</span>,<span style="color:#099">4</span>),
+         (<span style="color:#099">2</span>,<span style="color:#099">5</span>),
+         (<span style="color:#099">3</span>,<span style="color:#099">4</span>)]
+
+    <span style="color:#900;font-weight:bold">it</span> <span style="color:#d14">&#34;reparti les etudiants sur les formations&#34;</span> <span style="color:#000;font-weight:bold">$</span> <span style="color:#000;font-weight:bold">do</span>
+      <span style="color:#900;font-weight:bold">apb</span> [<span style="color:#900;font-weight:bold">e1</span>,<span style="color:#900;font-weight:bold">e2</span>,<span style="color:#900;font-weight:bold">e3</span>] [<span style="color:#900;font-weight:bold">f1</span>, <span style="color:#900;font-weight:bold">f2</span>] `<span style="color:#900;font-weight:bold">shouldBe</span>`
+        [(<span style="color:#900;font-weight:bold">e1</span>,<span style="color:#900;font-weight:bold">f1</span>),
+         (<span style="color:#900;font-weight:bold">e2</span>,<span style="color:#900;font-weight:bold">f2</span>),
+         (<span style="color:#900;font-weight:bold">e3</span>,<span style="color:#900;font-weight:bold">f1</span>)]
+      <span style="color:#000;font-weight:bold">where</span>
+        <span style="color:#900;font-weight:bold">e1</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#458;font-weight:bold">Etudiant</span> <span style="color:#d14">&#34;Jeanne&#34;</span>
+        <span style="color:#900;font-weight:bold">e2</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#458;font-weight:bold">Etudiant</span> <span style="color:#d14">&#34;Mathilde&#34;</span>
+        <span style="color:#900;font-weight:bold">e3</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#458;font-weight:bold">Etudiant</span> <span style="color:#d14">&#34;Sophie&#34;</span>
+        <span style="color:#900;font-weight:bold">f1</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#458;font-weight:bold">Formation</span> <span style="color:#d14">&#34;Informatique&#34;</span>
+        <span style="color:#900;font-weight:bold">f2</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#458;font-weight:bold">Formation</span> <span style="color:#d14">&#34;Histoire&#34;</span></code></pre></div>
 
 </main>
 

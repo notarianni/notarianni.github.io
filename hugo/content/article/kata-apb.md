@@ -39,7 +39,7 @@ A titre d'exemple, nous vous proposons cette solution très simple.
 - Le nombre de places par formations n'est pas limité.
 
 
-{{< highlight haskell  >}}
+{{< highlight haskell "style=github" >}}
 import Test.Hspec
 
 data Etudiant  = Etudiant  String deriving (Show, Eq)
