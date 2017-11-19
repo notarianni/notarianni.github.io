@@ -48,16 +48,15 @@ Si ce kata rencontre un peu de succès auprès de la communauté des
 informaticiens, il devient envisageable de trouver des implémentations
 différentes, avec des niveaux de complexité variables mais surtout avec des
 choix de critères d’algorithmes différents. Nous pourrions alors comparer ces
-algorithmes entre eux et faire émerger une ou plusieurs solutions qui
-seraient les plus satisfaisantes.
+algorithmes entre eux et faire émerger une ou plusieurs solutions satisfaisantes.
 
 Le code original de la première version de l'application a été mise en ligne sur ce
 [repo git](https://github.com/jeantil/admission_post_bac). Les plus courageux
 pourront tenter de le decrypter et peut être l'améliorer. 
 
 Néanmoins, le plus simple reste probablement d'inventer sa propre version. On
-pourra éventuellement chercher l'inspiration dans des travaux existants, tel
-que par exemple un algorithme de [mariages
+pourra éventuellement s'inpirer de travaux existants, tel que par exemple un
+algorithme de [mariages
 stables](https://fr.wikipedia.org/wiki/Probl%C3%A8me_des_mariages_stables).
 
 ## Un exemple de solution simple
