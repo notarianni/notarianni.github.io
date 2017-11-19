@@ -34,6 +34,7 @@ formation qui lui a été affectée.
 
 A titre d'exemple, nous vous proposons cette solution très simple implémentée
 en [Haskell](https://www.haskell.org/).
+Vous pouvez également consulter ce [repository git](https://github.com/BernardNotarianni/kata-apb)
 
 - Il n'y a aucun critère de sélection pour l'entrée dans les formations;
 - Nous distibuons les étudiants les uns après les autres sur la liste des formations disponibles;
