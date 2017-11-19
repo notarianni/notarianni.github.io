@@ -24,16 +24,45 @@ Le programme doit accepter en entrée:
 - La liste des formations
 
 Chaque étudiant et chaque formation doit être identifiée par un nom unique.
-Aafin d'alimenter votre algorithme, vous pouvez ajouter autant d'information
+Afin d'alimenter votre algorithme, vous pouvez ajouter autant d'information
 que nécessaire aussi bien aux étudiants qu'aux formations .
 
 Le programme fournira en résultat une liste indiquant pour chaque étudiant la
 formation qui lui a été affectée.
 
-## Exemple
+## Motivations
 
-A titre d'exemple, nous vous proposons cette solution très simple implémentée
-en [Haskell](https://www.haskell.org/).
+Beaucoup de kata sont un peu _artificiels_. Ils offrent un intérêt pour
+l’algorithmique qu’ils permettent de mettre en oeuvre, mais n’ont pas
+d’application concrètes pour de _vrais_ utilisateurs. [APB](https://www
+.admission-postbac.fr/) en revanche est utilisé par des centaines de milliers
+de personnes et il a un impact déterminant sur leurs vies.
+
+Malgrè tout, le sujet traité reste tout à fait accessible. Tout le monde peut
+comprendre le domaine métier sans faire appel à des _experts métiers_. Les
+personnes suffisamment jeunes ont elles-même été confrontées à APB et peuvent
+se souvenir ce qu’il peut représenter, et ainsi imaginer une solution qui
+leur paraitra plus adaptée.
+
+Si ce kata rencontre un peu de succès auprès de la communauté des
+informaticiens, il devient envisageable de trouver des implémentations
+différentes, avec des niveaux de complexité variables mais surtout avec des
+choix de critères d’algorithmes différents. Nous pourrions alors comparer ces
+algorithmes entre eux et faire émerger une ou plusieurs solutions qui
+seraient les plus satisfaisantes.
+
+Le code original de la première version de l'application a été mise en ligne sur ce
+[repo git](https://github.com/jeantil/admission_post_bac). Les plus courageux
+pourront tenter de le decrypter et peut être l'améliorer. 
+
+Néanmoins, le plus simple reste probablement d'inventer sa propre version. On
+pourra éventuellement chercher l'inspiration dans des travaux existants, tel
+que par exemple un algorithme de [mariages
+stables](https://fr.wikipedia.org/wiki/Probl%C3%A8me_des_mariages_stables).
+
+## Un exemple de solution simple
+
+Nous vous proposons ici une solution implémentée en [Haskell](https://www.haskell.org/).
 
 - Il n'y a aucun critère de sélection pour l'entrée dans les formations;
 - Nous distibuons les étudiants les uns après les autres sur la liste des formations disponibles;
@@ -93,3 +122,4 @@ main = hspec $ do
 {{< / highlight >}}
 
 Vous pouvez également consulter ce [repository git](https://github.com/BernardNotarianni/kata-apb) pour découvrir d'autres exemples de solutions.
+

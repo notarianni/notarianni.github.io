@@ -59,16 +59,45 @@ d&rsquo;étudiants selon une liste de formations disponibles.</p>
 </ul>
 
 <p>Chaque étudiant et chaque formation doit être identifiée par un nom unique.
-Aafin d&rsquo;alimenter votre algorithme, vous pouvez ajouter autant d&rsquo;information
+Afin d&rsquo;alimenter votre algorithme, vous pouvez ajouter autant d&rsquo;information
 que nécessaire aussi bien aux étudiants qu&rsquo;aux formations .</p>
 
 <p>Le programme fournira en résultat une liste indiquant pour chaque étudiant la
 formation qui lui a été affectée.</p>
 
-<h2 id="exemple">Exemple</h2>
+<h2 id="motivations">Motivations</h2>
 
-<p>A titre d&rsquo;exemple, nous vous proposons cette solution très simple implémentée
-en <a href="https://www.haskell.org/">Haskell</a>.</p>
+<p>Beaucoup de kata sont un peu <em>artificiels</em>. Ils offrent un intérêt pour
+l’algorithmique qu’ils permettent de mettre en oeuvre, mais n’ont pas
+d’application concrètes pour de <em>vrais</em> utilisateurs. <a href="https://www
+.admission-postbac.fr/">APB</a> en revanche est utilisé par des centaines de milliers
+de personnes et il a un impact déterminant sur leurs vies.</p>
+
+<p>Malgrè tout, le sujet traité reste tout à fait accessible. Tout le monde peut
+comprendre le domaine métier sans faire appel à des <em>experts métiers</em>. Les
+personnes suffisamment jeunes ont elles-même été confrontées à APB et peuvent
+se souvenir ce qu’il peut représenter, et ainsi imaginer une solution qui
+leur paraitra plus adaptée.</p>
+
+<p>Si ce kata rencontre un peu de succès auprès de la communauté des
+informaticiens, il devient envisageable de trouver des implémentations
+différentes, avec des niveaux de complexité variables mais surtout avec des
+choix de critères d’algorithmes différents. Nous pourrions alors comparer ces
+algorithmes entre eux et faire émerger une ou plusieurs solutions qui
+seraient les plus satisfaisantes.</p>
+
+<p>Le code original de la première version de l&rsquo;application a été mise en ligne sur ce
+<a href="https://github.com/jeantil/admission_post_bac">repo git</a>. Les plus courageux
+pourront tenter de le decrypter et peut être l&rsquo;améliorer.</p>
+
+<p>Néanmoins, le plus simple reste probablement d&rsquo;inventer sa propre version. On
+pourra éventuellement chercher l&rsquo;inspiration dans des travaux existants, tel
+que par exemple un algorithme de <a href="https://fr.wikipedia.org/wiki/Probl%C3%A8me_des_mariages_stables">mariages
+stables</a>.</p>
+
+<h2 id="un-exemple-de-solution-simple">Un exemple de solution simple</h2>
+
+<p>Nous vous proposons ici une solution implémentée en <a href="https://www.haskell.org/">Haskell</a>.</p>
 
 <ul>
 <li>Il n&rsquo;y a aucun critère de sélection pour l&rsquo;entrée dans les formations;</li>
