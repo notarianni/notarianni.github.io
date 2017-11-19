@@ -17,8 +17,8 @@
       <pubDate>Sat, 18 Nov 2017 00:00:00 +0000</pubDate>
       
       <guid>http://notarianni.org/article/kata-apb/</guid>
-      <description>Adminission Post Bac (APB) est l&amp;rsquo;application officielle du Ministère de l&amp;rsquo;Education Nationale permettant aux lycéens d&amp;rsquo;obtenir l&amp;rsquo;inscription dans une école ou université post- bac.
-L&amp;rsquo;objectif de ce kata est de concevoir et implémenter votre version de cette application. Vous êtes libre de choisir votre algorithme et vos contraintes. Vous pouvez vous inspirer de l&amp;rsquo;application existante si vous le souhaitez, ou bien inventer votre propre approche.
+      <description>Admission Post Bac (APB) est l&amp;rsquo;application officielle du Ministère de l&amp;rsquo;Education Nationale permettant aux lycéens d&amp;rsquo;obtenir l&amp;rsquo;inscription dans une école ou université post- bac.
+L&amp;rsquo;objectif de ce kata est de concevoir et implémenter votre version de cette application. Vous êtes libre de choisir votre algorithme et vos contraintes. Vous pouvez vous inspirer de l&amp;rsquo;application existante ou bien inventer votre propre approche.
 Description du problème Constuisez un programme qui permette de déterminer les affectations d&amp;rsquo;une liste d&amp;rsquo;étudiants selon une liste de formations disponibles.</description>
     </item>
     

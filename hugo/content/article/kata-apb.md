@@ -3,15 +3,15 @@ title: "Kata APB"
 date: '2017-11-18'
 ---
 
-[Adminission Post Bac](https://www.admission-postbac.fr/) (APB) est
+[Admission Post Bac](https://www.admission-postbac.fr/) (APB) est
 l'application officielle du Ministère de l'Education Nationale permettant aux
 lycéens d'obtenir l'inscription dans une école ou université post-
 bac.
 
 L'objectif de ce kata est de concevoir et implémenter _votre_ version de cette
 application. Vous êtes libre de choisir votre algorithme et vos contraintes.
-Vous pouvez vous inspirer de l'application existante si vous le souhaitez,
-ou bien inventer votre propre approche.
+Vous pouvez vous inspirer de l'application existante ou bien inventer votre
+propre approche.
 
 ## Description du problème
 
@@ -32,7 +32,8 @@ formation qui lui a été affectée.
 
 ## Exemple
 
-A titre d'exemple, nous vous proposons cette solution très simple. 
+A titre d'exemple, nous vous proposons cette solution très simple implémentée
+en [Haskell](https://www.haskell.org/).
 
 - Il n'y a aucun critère de sélection pour l'entrée dans les formations;
 - Nous distibuons les étudiants les uns après les autres sur la liste des formations disponibles;
