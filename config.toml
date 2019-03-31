@@ -9,11 +9,11 @@ publishDir = "docs"
     url = "/"
     weight = 1
 [[menu.main]]
-    name = "Bio"
-    url = "/bio/"
+    name = "About"
+    url = "/about/"
     weight = 2
 [[menu.main]]
-    name = "Catégories"
+    name = "Categories"
     url = "/categories/"
     weight = 3
 [[menu.main]]
