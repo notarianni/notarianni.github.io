@@ -1,5 +1,5 @@
 
-I am software creator interested in eXtreme Programming and software desig
+I am a software creator interested in eXtreme Programming and software design.
 
 Opinions are my own and not the views of my employer.
 
