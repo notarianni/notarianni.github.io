@@ -1,7 +1,7 @@
 baseURL = "http://notarianni.org/"
 languageCode = "fr"
-title = "notarianni.org"
-theme = "hugo-xmin"
+title = "Bernard Notarianni"
+theme = "contrast-hugo"
 publishDir = "docs"
 
 [[menu.main]]
